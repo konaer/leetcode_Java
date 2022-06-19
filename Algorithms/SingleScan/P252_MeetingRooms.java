@@ -1,6 +1,7 @@
 package SingleScan;
 
-import java.util.*;
+import java.util.Arrays;
+
 
 public class P252_MeetingRooms {
 	public boolean canAttendMeetings(int[][] intervals) {

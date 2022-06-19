@@ -19,4 +19,10 @@ public class P253_MeetingRooms2 {
         }
         return ans;
     }
+
+    public int minMeetingRooms(int[][] intervals) {   
+        
+    }
+
+
 }
