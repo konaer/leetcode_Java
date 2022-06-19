@@ -1,9 +1,8 @@
 package SingleScan;
 
-import java.rmi.server.ServerNotActiveException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.PriorityQueue;
+
 
 public class P986_IntervalListIntersections {
 	public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
