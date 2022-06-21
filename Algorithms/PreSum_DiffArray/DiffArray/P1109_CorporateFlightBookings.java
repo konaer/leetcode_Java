@@ -1,4 +1,4 @@
-package PreSum_DiffArray;
+package PreSum_DiffArray.DiffArray;
 
 public class P1109_CorporateFlightBookings {
     public int[] corpFlightBookings(int[][] bookings, int n) {

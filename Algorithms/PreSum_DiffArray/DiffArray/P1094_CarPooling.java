@@ -1,4 +1,4 @@
-package PreSum_DiffArray;
+package PreSum_DiffArray.DiffArray;
 
 import java.util.*;
 

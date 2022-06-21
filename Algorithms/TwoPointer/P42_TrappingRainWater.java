@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package TwoPointer;
 
 public class P42_TrappingRainWater {
     //动态规划
