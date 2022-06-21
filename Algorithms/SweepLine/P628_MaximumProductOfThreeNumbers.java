@@ -1,4 +1,4 @@
-package SingleScan;
+package SweepLine;
 
 public class P628_MaximumProductOfThreeNumbers {
     public int maximumProduct(int[] nums) {

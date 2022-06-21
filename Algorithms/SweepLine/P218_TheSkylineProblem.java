@@ -1,4 +1,4 @@
-package SingleScan;
+package SweepLine;
 import java.util.*;
 
 public class P218_TheSkylineProblem {

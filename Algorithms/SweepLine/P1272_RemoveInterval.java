@@ -1,4 +1,4 @@
-package SingleScan;
+package SweepLine;
 
 import java.util.ArrayList;
 import java.util.List;
