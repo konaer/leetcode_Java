@@ -1,8 +1,6 @@
 package Companies.Amazon;
 
-import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 //https://leetcode.com/discuss/interview-question/1706805/Amazon-OA-Question-Is-there-an-O(n)
 //https://leetcode.com/discuss/interview-question/1736639/Solution-to-Amazon-OA-2022-problem-Sum-of-Scores-of-Subarray
@@ -24,10 +22,7 @@ public class SumOfServerPowers {
             int minNum = nums[i];
             for (int j = i; j < nums.length; j++) {
                 minNum = Math.min(minNum, nums[j]);
-                System.out.println("minNum = " + minNum);
-                ans += minNum * (preSum[j + 1] - preSum[i]);
-                System.out.println();
-                System.out.println("ans= " + ans);
+                ans += minNum * (preSum[j + 1] - preSum[i]); 
             }
         }
         return ans;
