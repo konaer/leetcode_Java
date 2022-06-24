@@ -6,6 +6,7 @@ import java.util.Arrays;
 //https://leetcode.com/discuss/interview-question/1736639/Solution-to-Amazon-OA-2022-problem-Sum-of-Scores-of-Subarray
 
 //https://www.1point3acres.com/bbs/thread-905616-1-1.html
+//https://www.1point3acres.com/bbs/thread-904318-1-1.html
 
 public class SumOfServerPowers {
     public static int find(int[] nums) {
