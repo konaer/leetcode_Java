@@ -1,4 +1,4 @@
-package BasicAlgo.PreSum_DiffArray.PreFixSum;
+package PopularTopic.TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
