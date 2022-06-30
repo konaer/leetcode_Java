@@ -1,3 +1,5 @@
+package DataStructure.UnionFind;
+
 import java.util.*;
 
 public class P305_NumberOfIslands2 {

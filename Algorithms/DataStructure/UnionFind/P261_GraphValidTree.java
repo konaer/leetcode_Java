@@ -1,3 +1,5 @@
+package DataStructure.UnionFind;
+
 public class P261_GraphValidTree {
     public boolean validTree(int n, int[][] edges) {
         UnionFind uf = new UnionFind(n);

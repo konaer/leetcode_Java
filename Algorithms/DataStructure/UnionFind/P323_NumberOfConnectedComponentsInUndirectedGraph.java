@@ -1,3 +1,5 @@
+package DataStructure.UnionFind;
+
 public class P323_NumberOfConnectedComponentsInUndirectedGraph {
     public int countComponents(int n, int[][] edges) {
         int ans = n;

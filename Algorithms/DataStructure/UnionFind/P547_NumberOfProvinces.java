@@ -1,3 +1,5 @@
+package DataStructure.UnionFind;
+
 public class P547_NumberOfProvinces {
     
     public int findCircleNum(int[][] isConnected) {
