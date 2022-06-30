@@ -2,7 +2,7 @@ package DP;
 
 public class P42_TrappingRainWater {
     //动态规划
-    //space o(1)
+    //space o(n)
     public int trap(int[] height) {
         int n = height.length;
         
