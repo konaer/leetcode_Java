@@ -1,4 +1,4 @@
-package Others;
+package PopularTopic.Array;
 
 public class P665_NonDecreasingArray {
     public boolean checkPossibility(int[] nums) {

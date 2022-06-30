@@ -1,4 +1,4 @@
-package Others;
+package PopularTopic.Array;
 
 public class P31_NextPermutation {
     public void nextPermutation(int[] nums) {
