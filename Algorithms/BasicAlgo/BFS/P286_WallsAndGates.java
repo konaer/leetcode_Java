@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class P286_WallsAndGates {
+    //o(mn)
     public void wallsAndGates(int[][] rooms) {
         int[] dir = {1, 0, -1, 0 ,1};
         int EMPTY = Integer.MAX_VALUE;
