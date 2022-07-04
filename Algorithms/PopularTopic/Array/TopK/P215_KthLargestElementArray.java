@@ -1,6 +1,5 @@
 package PopularTopic.Array.TopK;
 
-import java.lang.runtime.SwitchBootstraps;
 import java.util.PriorityQueue;
 
 public class P215_KthLargestElementArray {
