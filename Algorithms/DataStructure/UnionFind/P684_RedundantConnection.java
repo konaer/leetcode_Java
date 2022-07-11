@@ -1,40 +1,38 @@
 package DataStructure.UnionFind;
 
-public class P261_GraphValidTree {
+public class P684_RedundantConnection {
     //时间， 带rank的unionfind 操作一次近似为常数，按照logn算
 	//所以总的是 klogn
 	//并查集需要的空间是n
-    public boolean validTree(int n, int[][] edges) {
-        UnionFind uf = new UnionFind(n);
-        int count = n;
+    public int[] findRedundantConnection(int[][] edges) {
+        UnionFind uf = new UnionFind(edges.length + 1);
         for (int[] edge : edges) {
-            //树里面不能有环
-            if (uf.isConnected(edge[0], edge[1])) {
-                return false;
+            if (!uf.isConnected(edge[0], edge[1])) {
+                uf.union(edge[0], edge[1]);
+            } else {
+                return edge;
             }
-            uf.union(edge[0], edge[1]);
-            count--;
         }
-        return count == 1;        
+        return new int[0];
     }
 
     class UnionFind {
-        private int[] parents;
-        private int[] rank;
+        int[] parent;
+        int[] rank;
         public UnionFind(int n) {
-            this.parents = new int[n];
+            this.parent = new int[n];
             this.rank = new int[n];
             for (int i = 0; i < n; i++) {
-                parents[i] = i;
+                parent[i] = i;
                 rank[i] = 0;
             }
         }
 
         public int find(int x) {
-            if (parents[x] != x) {
-                parents[x] = find(parents[x]);
+            if (parent[x] != x) {
+                parent[x] = find(parent[x]);
             }
-            return parents[x];
+            return parent[x];
         }
 
         public void union(int x, int y) {
@@ -44,11 +42,11 @@ public class P261_GraphValidTree {
                 return;
             }
             if (rank[i] > rank[j]) {
-                parents[j] = i;
-            } else if (rank[j] > rank[i]) {
-                parents[i] = j;
+                parent[j] = i;
+            } else if (rank[i] < rank[j]) {
+                parent[i] = j;
             } else {
-                parents[i] = j;
+                parent[i] = j;
                 rank[j]++;
             }
         }
