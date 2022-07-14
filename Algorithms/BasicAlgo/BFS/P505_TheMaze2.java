@@ -13,11 +13,11 @@ public class P505_TheMaze2 {
             Arrays.fill(row, Integer.MAX_VALUE);
         }
         distances[start[0]][start[1]] = 0;
-        dikistra(maze, start, distances);
+        dijistra(maze, start, distances);
         return distances[de[0]][de[1]] == Integer.MAX_VALUE ? -1 : distances[de[0]][de[1]];
     }
 
-    private void dikistra(int[][] maze, int[] start, int[][] distances) {
+    private void dijistra(int[][] maze, int[] start, int[][] distances) {
         int[] dir = {1, 0, -1, 0, 1};
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[2] - b[2]);
         pq.offer(new int[]{start[0], start[1], 0});
