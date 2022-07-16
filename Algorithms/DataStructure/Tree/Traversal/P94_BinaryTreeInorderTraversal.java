@@ -1,6 +1,7 @@
 package DataStructure.Tree.Traversal;
 
 import java.util.*;
+import DataStructure.Tree.TreeNode;
 
 public class P94_BinaryTreeInorderTraversal {
     //o(n)

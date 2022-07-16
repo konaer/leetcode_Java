@@ -1,6 +1,7 @@
 package DataStructure.Tree.Traversal;
 
 import java.util.*;
+import DataStructure.Tree.TreeNode;
 
 public class P144_BinaryTreePreorderTraversal {
     //iteration
@@ -37,15 +38,5 @@ public class P144_BinaryTreePreorderTraversal {
         ans.add(root.val);
         dfs(root.left);
         dfs(root.right);
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    public TreeNode(){}
-    public TreeNode(int val) {
-        this.val = val;
     }
 }

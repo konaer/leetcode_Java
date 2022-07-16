@@ -1,6 +1,7 @@
 package DataStructure.Tree.Traversal;
 
 import java.util.*;
+import DataStructure.Tree.TreeNode;
 
 public class P103_BinaryTreeZigzagLevelOrderTraversal {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
