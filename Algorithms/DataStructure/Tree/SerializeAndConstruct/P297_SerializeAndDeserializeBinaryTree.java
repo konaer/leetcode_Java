@@ -10,7 +10,8 @@ public class P297_SerializeAndDeserializeBinaryTree {
             return "#";
         }
         StringBuilder sb = new StringBuilder();
-        sb.append(root.val).append(",").append(serialize(root.left))
+        sb.append(root.val)
+            .append(",").append(serialize(root.left))
             .append(",").append(serialize(root.right));
         return sb.toString();
     }
