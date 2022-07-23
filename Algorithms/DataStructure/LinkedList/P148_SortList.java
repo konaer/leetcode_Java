@@ -3,15 +3,6 @@ package DataStructure.LinkedList;
 public class P148_SortList {
     // 时间复杂度，归并排序 nlogn
 	// 空间递归占用的栈空间 log n
-    class ListNode {
-        int val;
-        ListNode next;
-        public ListNode() {}
-        public ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) {
             return head;

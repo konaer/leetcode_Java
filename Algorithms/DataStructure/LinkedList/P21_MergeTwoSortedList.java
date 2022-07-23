@@ -1,16 +1,6 @@
 package DataStructure.LinkedList;
 
 public class P21_MergeTwoSortedList {
-    
-    class ListNode {
-        int val;
-        ListNode next;
-        public ListNode(){}
-        public ListNode(int val) {
-            this.val = val;
-        }
-    }
-
     //m + n
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode();
