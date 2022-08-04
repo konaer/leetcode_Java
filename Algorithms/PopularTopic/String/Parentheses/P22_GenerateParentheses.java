@@ -4,7 +4,7 @@ import java.util.*;
 
 public class P22_GenerateParentheses {
 
-    List<String> ans = new ArrayList();
+    List<String> ans = new ArrayList<>();
 
     public List<String> generateParenthesis(int n) {
         StringBuilder sb = new StringBuilder();
